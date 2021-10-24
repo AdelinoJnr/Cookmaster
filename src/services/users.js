@@ -1,7 +1,7 @@
 const { sign } = require('jsonwebtoken');
 const Schema = require('../utils/schema');
 const Users = require('../models/users');
-const { SECRET, jwtConfig } = require('../data');
+const { SECRET, jwtConfig } = require('../database');
 
 const create = async (data) => {
   const { error } = Schema.schemaUsers.validate(data);

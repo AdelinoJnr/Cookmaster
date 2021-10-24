@@ -1,7 +1,7 @@
 const { ObjectId } = require('mongodb');
 const Schema = require('../utils/schema');
 const Recipes = require('../models/recipes');
-const { URL } = require('../data');
+const { URL } = require('../database');
 
 const create = async (data, userId) => {
   const { error } = Schema.schemaRecipes.validate(data);
